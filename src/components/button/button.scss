@@ -1,0 +1,22 @@
+@use '../../scss/' as *;
+
+.button {
+    width: 230px;
+    height: 70px;
+    background-color: $primary-color;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: $white;
+    font-weight: bold;
+    cursor: pointer;
+    transition-duration: 0.3s;
+
+    &:hover {
+        background-color: $secondary-color;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        transform: scale(1.05);
+    }
+}

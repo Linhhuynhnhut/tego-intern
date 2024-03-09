@@ -1,0 +1,152 @@
+@use '../../scss/' as *;
+
+.section {
+    background-color: #FCFCFC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 68px 0;
+
+    .title_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 70px;
+
+        .title {
+            font-size: 2em;
+            font-weight: bold;
+            color: $font-color;
+            margin-bottom: 20px;
+        }
+
+        .subTitle {
+            font-size: 1.25em;
+            font-weight: 400;
+            color: $font-color1;
+        }
+    }
+
+    .type1,
+    .type2,
+    .type3 {
+        display: flex;
+        flex-direction: row;
+
+        .image_container {
+            margin: 0 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .img {
+                width: 381px;
+                height: 400px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+
+            .index {
+                width: 90px;
+                height: 90px;
+                background-color: #111111;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                position: relative;
+                top: -45px;
+                border: 15px solid #FCFCFC;
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+
+            .title {
+                font-size: 1.5em;
+                font-weight: bold;
+                color: $font-color;
+                margin-bottom: 10px;
+                width: 381px;
+                display: flex;
+                justify-content: center;
+                text-align: justify;
+            }
+
+            .content {
+                font-size: 1.125em;
+                font-weight: 400;
+                color: $font-color1;
+                width: 381px;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+
+            }
+        }
+
+
+    }
+
+    .type2 {
+        .image_container {
+
+            .img {
+                height: 480px;
+                margin-bottom: 30px;
+            }
+
+            .index,
+            .content {
+                display: none;
+            }
+        }
+    }
+
+    .type3 {
+        .image_container {
+            margin: 0 20px;
+
+            .img {
+                border-radius: 0;
+                width: 355px;
+                height: 434px;
+                margin-bottom: 30px;
+
+                &.img-border-top-left {
+                    border-top-left-radius: 70px;
+                }
+
+                &.img-border-top-right {
+                    border-top-right-radius: 70px;
+                }
+
+                &.img-border-bottom-left {
+                    border-bottom-left-radius: 70px;
+                }
+
+                &.img-border-bottom-right {
+                    border-bottom-right-radius: 70px;
+                }
+
+                &.img-margin-top {
+                    margin-top: 40px;
+                }
+
+                &.img-margin-bottom {
+                    margin-bottom: 40px;
+                }
+            }
+
+            .index,
+            .title,
+            .content {
+                display: none;
+            }
+        }
+    }
+}
+
+.none {
+    display: none;
+}
